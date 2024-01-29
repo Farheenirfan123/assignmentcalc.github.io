@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center> 
+    <h1 style="">Calculator</h1>
+    <input type="number" name="" id="1st number"  placeholder="Enter number" style="margin-top: 120px;  width: 300px; height: 50px; border-radius: 10px; background-color: rgba(181, 203, 212, 0.726);">
+    
+    <input type="number" name="" id="2nd number" placeholder="Enter number" style="margin-top: 120px;  width: 300px; height: 50px; border-radius: 10px; background-color: rgba(166, 206, 216, 0.74);">
+    <br>
+    <br>
+    <button onclick="add()" style="background-color: rgb(174, 238, 26); width: 100px; height: 30px;font-weight: bolder; border-radius: 10px;">Add</button>
+    <button onclick="sub()" style="background-color: rgb(236, 15, 236); width: 100px; height: 30px;font-weight: bolder; border-radius: 10px;">Subtract</button>
+    <button onclick="mult()" style="background-color:rgb(238, 180, 192) ; width: 100px; height: 30px; font-weight: bolder;border-radius: 10px;">Multiply</button>
+    <button onclick="div()" style="background-color: rgb(102, 218, 218); width: 100px; height: 30px; font-weight: bolder;border-radius: 10px;">Divide</button>
+
+<h1 id="result" style="color: blue;"></h1>
+</center>
+
+<script>
+
+      
+     function add(){
+     num1 = parseInt(document.getElementById("1st number").value);
+      num2 = parseInt(document.getElementById("2nd number").value);
+      document.getElementById("result").innerText = num1 + num2
+      
+    }
+    function sub(){
+     num1 = document.getElementById("1st number").value;
+      num2 = document.getElementById("2nd number").value;
+      document.getElementById("result").innerText = num1 - num2
+      
+    }
+    function mult(){
+     num1 = document.getElementById("1st number").value;
+      num2 = document.getElementById("2nd number").value;
+      document.getElementById("result").innerText = num1 * num2
+      
+    }
+    function div(){
+     num1 = document.getElementById("1st number").value;
+      num2 = document.getElementById("2nd number").value;
+      document.getElementById("result").innerText = num1 / num2
+      
+    }
+
+</script>
+
+</body>
+</html>
